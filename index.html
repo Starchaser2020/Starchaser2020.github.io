@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="/favicon.ico" >
     
     
-<link rel="stylesheet" href="/css/style.css?v=1610807831901.css">
+<link rel="stylesheet" href="/css/style.css?v=1610850847949.css">
 
     <!--[if lt IE 9]>
     
@@ -119,6 +119,116 @@
             
         </strong>
     </h3>
+    
+        <!-- 文章列表 item -->
+<article class="post">
+    <header>
+        <!-- 标签这有且只能显示一个 -->
+        
+        <a class="cat-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+        
+        <!-- 文章标题 -->
+        
+    <h3 class="post-title">
+    	<a href="https://starchaser2020.github.io/2021/01/16/HTML%E5%AD%A6%E4%B9%A0/">
+    		HTML简单笔记
+    	</a>
+    </h3>
+
+    </header>
+    <p class="post-meta">
+        Jelon 发表于
+        <time datetime="2021-01-15T16:00:00.000Z">2021-01-16</time>
+        &nbsp;&nbsp;
+        <span class="post-tags">
+            标签：
+            
+    
+        <a href="/tags/HTML/" title="HTML">HTML</a>
+    
+
+        </span>
+    </p>
+
+    <div class="post-content">
+        <div class="post-excerpt">
+            
+                <h1 id="HTML简介"><a href="#HTML简介" class="headerlink" title="HTML简介"></a>HTML简介</h1><ol>
+<li><p>HTML(<strong>H</strong>yper <strong>Text</strong> <strong>M</strong>arkup <strong>L</strong>anguage)</p>
+<ul>
+<li>HTML是一种标记语言（何为标记？标记其他语言的状态：属性、位置等等）</li>
+</ul>
+</li>
+<li><p>HTML标签</p>
+<ul>
+<li> HTML 标记标签通常被称为 HTML 标签 (HTML tag)。 </li>
+</ul>
+<ul>
+<li>HTML 标签是由尖括号包围的关键词，比如 <code>&lt;html&gt;</code></li>
+<li>HTML 标签通常是成对出现的，比如 <code>&lt;b&gt;</code> 和 <code>&lt;/b&gt;</code>标签对中的第一个标签是开始标签，第二个标签是结束标签开始和结束标签也被称为开放标签和闭合标签</li>
+</ul>
+</li>
+<li><p>HTML 文档 = 网页<br>简单来说一个HTML文档即一个打开的网页。<br>基本元素：</p>
+<ul>
+<li><code>&lt;html&gt;</code>与<code>&lt;/html&gt;</code> 之间的文本描述网页</li>
+<li><code>&lt;body&gt;</code>与 <code>&lt;/body&gt;</code> 之间的文本是可见的页面内容</li>
+<li><code>&lt;h1&gt;</code> 与 <code>&lt;/h1&gt;</code>之间的文本被显示为标题</li>
+<li><code>&lt;p&gt;</code> 与 <code>&lt;/p&gt;</code> 之间的文本被显示为段落</li>
+</ul>
+</li>
+<li><p>HTML元素<br>HTML元素是从开始标签到闭合标签的所有内容代码内容</p>
+</li>
+<li><p>HTML属性<br>HTML属性为<strong>元素</strong>提供附加信息。<br>HTML标签可以拥有属性，即尖括号内可以拥有属性，属性以*名字：”值”的方式出现，例如：name=”value”，属性值都是包括在引号内的。</p>
+<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><p>注释标签：<code>&lt;!-- this is a comment --&gt;</code><br>水平线：<code>&lt;hr /&gt;</code><br>段落：<code>&lt;p&gt;这里添加内容&lt;/p&gt;</code><br>样式：准确来讲，样式可以是一个属性，定义标签的显示，比如<code>&lt;h1 style = &quot;font-family:verdana&quot;&gt;A heading&lt;/h1&gt;</code><br>文本格式化标签：<code>&lt;pre&gt;&lt;/pre&gt;</code>-预格式化标签，保留空格和换行…<br>双向重写：<code>&lt;bdo&gt;&lt;/bdo&gt;</code><br>样式：</p>
+</li>
+</ol>
+<ul>
+<li>外部样式- <code>&lt;head&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;&lt;/head&gt;</code></li>
+<li>内部样式表（类似于标签）-<br><code>&lt;head&gt;&lt;style type=&quot;text/css&quot;&gt;body &#123;background-color: red&#125;p &#123;margin-left: 20px&#125;&lt;/style&gt;&lt;/head&gt;</code></li>
+<li>内部样式：其他标签属性</li>
+</ul>
+<p>链接：两种链接</p>
+<ul>
+<li>超文本链接：<code>&lt;a href=&quot;www.baidu.com&quot;&gt;&lt;/a&gt;</code></li>
+<li>锚链接：一个前提有一个锚<code><code>&lt;a id = &#39;tips&#39;&gt;&lt;/a&gt;</code></code><pre><code>              访问这个锚`&lt;a href=&#39;www.baidu.com#tips&#39;&gt;&lt;/a&gt;`</code></pre>
+</li>
+</ul>
+<p>图像：<code>&lt;img src=&quot;url&quot; /&gt;</code><br>表格：<code>&lt;table&gt;表&lt;/table&gt;、&lt;tr&gt;行&lt;/tr&gt;、&lt;tb&gt;列&lt;/tb&gt;</code><br>列表</p>
+<ul>
+<li>无序列表：<code>&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code></li>
+<li>有序列表：<code>&lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</code></li>
+<li>定义列表：<pre><br>&lt;dl&gt;<br>&lt;dt&gt;Coffee&lt;/dt&gt;<br>&lt;dd&gt;Black hot drink&lt;/dd&gt;<br>&lt;dt&gt;Milk&lt;/dt&gt;<br>&lt;dd&gt;White cold drink&lt;/dd&gt;<br>&lt;/dl&gt;<br></pre><br>元素分类<ul>
+<li>块元素(block level element)<br>  通常会以新行来开始（和结束）<code>&lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;table&gt;</code><ul>
+<li>div是块级元素，它是可用于组合其他 HTML 元素的容器。<code>&lt;div&gt;</code> 元素没有特定的含义。除此之外，由于它属于块级元素，浏览器会在其前后显示折行。作用：<ol>
+<li>对大的内容块设置样式属性；</li>
+<li>文档布局。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>内联元素(inline element)<br>  通常不会以新行开始<code>&lt;b&gt;, &lt;td&gt;, &lt;a&gt;, &lt;img&gt;</code><ul>
+<li>HTML <code>&lt;span&gt;</code> 元素是内联元素，可用作文本的容器。<code>&lt;span&gt;</code> 元素也没有特定的含义。当与 CSS 一同使用时，<span> 元素可用于为部分文本设置样式属性。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+            <p class="more">
+                <a href="https://starchaser2020.github.io/2021/01/16/HTML%E5%AD%A6%E4%B9%A0/">阅读剩下更多</a>
+            </p>
+        </div>
+        <div class="post-thumbnail" data-img="">
+            <a href="https://starchaser2020.github.io/2021/01/16/HTML%E5%AD%A6%E4%B9%A0/" title="HTML简单笔记">
+                
+                    <img class="thumbnail" src="/img/default.png" data-echo="/img/thumbnail/6.jpg" alt="默认配图" >
+                
+            </a>
+        </div>
+    </div>
+</article>
+
     
         <!-- 文章列表 item -->
 <article class="post">
@@ -229,6 +339,11 @@
         <!-- 文章分类 -->
 <ul class="widget-bd">
     
+    <li>
+        <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+        <span class="badge">(1)</span>
+    </li>
+    
 </ul>
     </section>
 
@@ -237,6 +352,8 @@
         <h3 class="widget-hd"><strong>热门标签</strong></h3>
         <!-- 文章标签 -->
 <div class="widget-bd tag-wrap">
+  
+    <a class="tag-item" href="/tags/HTML/" title="HTML">HTML (1)</a>
   
     <a class="tag-item" href="/tags/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="-学习记录">-学习记录 (1)</a>
   
@@ -282,7 +399,7 @@
     <!--博客js脚本 -->
     <!-- 这里放网站js脚本 -->
 
-<script src="/js/main.js?v=1610807831902.js"></script>
+<script src="/js/main.js?v=1610850847953.js"></script>
 
 
 </body>
